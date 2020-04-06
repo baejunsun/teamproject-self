@@ -1,0 +1,256 @@
+/* 숨김컨텐츠 */
+.a11yhidden {
+    position: absolute;
+    overflow: hidden;
+    height: 1;
+    width: 1;
+    clip: rect(0, 0, 0, 0);
+    clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+/* 박스사이징 */
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+    text-decoration:none;
+}
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    list-style: none;
+    text-decoration:none;
+}
+
+
+
+
+
+/* 본문 */
+/* 헤더 */
+header{
+    width: 100%;
+    position: fixed;
+    /* padding: 0; */
+    z-index: 100;
+}
+
+.headerLogo {
+    display: block;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-bottom: 1px solid black;
+    padding: 15px;
+    margin: 0;
+}
+/* 메뉴버튼 */
+.menuButton{
+    padding: 0 0 0 15px;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    transition-duration: 1s;
+}
+.menuButton:hover{
+    background-color: rgba(103, 66, 190, 0.25);
+    transition-duration: 1s;
+}
+.buttonBurger {
+    padding:0;
+    background-color: rgb(255, 255, 255);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    overflow: hidden;
+    border: none;
+}
+
+.burgerBar {
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    padding: 0;
+}
+
+.positionTop {
+    top: 0;
+}
+
+.positionMiddle {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.positionBottom {
+    top: 100%;
+    transform: translateY(-100%);
+}
+
+/* 네비게이션 */
+
+
+.navBox{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    top: 0;
+    left: 0;
+    padding: 100px 0 0 0;
+    /* display: none; */
+}
+.navItem {
+    background-color:  rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid black;
+    text-indent: 20px;
+    line-height: 50px;
+}
+.navItem a{
+    color: white;
+    display: block;
+    transition: 0.5s;
+}
+
+
+.navItem:hover{
+    background-color: rgba(103, 66, 190, 0.25);
+    transition-duration: 0.5s;
+}
+
+.navButton{
+    background-color:  rgba(0, 0, 0, 0.25);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: white;
+    font-size: 30px;
+    border: none;
+    padding: 0 15px;
+    
+}
+
+.navButton:hover{
+    font-size: 40px;
+    transition-duration: 0.5s;
+}
+
+
+
+.coffee{
+    margin: 0 auto;
+    padding: 100px 0 0 0;
+}
+.coffee1 img:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+figcaption{
+    color: black;
+}
+.coffee1 div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: left;
+    padding: 40px 20px;
+}
+.coffee1 button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+}
+.coffee1 table{
+    background-color: rgb(228, 236, 240);
+    width: 100%;
+    padding: 5px 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateY(-100%);
+    padding: 10px 30px;
+    font-size: 0.5em;
+    /* border-collapse: collapse; */
+}
+.coffee1 table tr th{
+    font-weight: normal;
+
+
+}
+.coffee div{
+    border: 1px solid rgb(213, 226, 231);
+}
+.coffee div dt{
+    font-size: 1.3em;
+}
+.coffee div dt p{
+    font-size: 0.5em;
+}
+.coffee div dt:after{
+    content: "";
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 2px;
+    margin: 10px 0;
+}
+.coffee1{
+    position: relative;
+    margin: 10px 0;
+    height: 350px;
+    text-align: center;
+    background-color: rgb(236, 237, 243);
+}
+.coffee1 table .bod{
+    border-right: 1px solid black;
+}
+.pad{
+    padding: 0 20px;
+}
+.tb{
+    width: 100%;
+    padding: 10px;
+}
+
+@media screen and (max-width: 560px) {
+    .coffee{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .coffee1{
+        width: 100%;
+        margin: 20px;
+    }
+}
+@media screen and (min-width: 561px) {
+    .coffee{
+        max-width: 800px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    .coffee1{
+        width: 45%;
+    }
+ 
+}
