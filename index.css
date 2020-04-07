@@ -105,14 +105,14 @@ header{
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: hsla(225, 57%, 10%, 0.9);
     top: 0;
     left: 0;
     padding: 100px 0 0 0;
     /* display: none; */
+    z-index: 1000;
 }
 .navItem {
-    background-color:  rgba(0, 0, 0, 0.25);
     border-bottom: 1px solid black;
     text-indent: 20px;
     line-height: 50px;
@@ -179,6 +179,10 @@ figcaption{
     border: none;
     font-size: 20px;
 }
+.coffee1 button:hover{
+    transition-duration: 0.5s;
+    background-color: rgba(125, 186, 194, 0.199);
+}
 .coffee1 table{
     background-color: rgb(228, 236, 240);
     width: 100%;
@@ -198,6 +202,8 @@ figcaption{
 }
 .coffee div{
     border: 1px solid rgb(213, 226, 231);
+    background-color: rgb(252, 252, 252, 0.5);
+    /* display: none; */
 }
 .coffee div dt{
     font-size: 1.3em;
